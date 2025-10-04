@@ -38,6 +38,25 @@ cout << "Posicion de \"adios\" en vecDescStr: " << posDescStr << endl;
         cout << "Posicion del 'b' en vecDescChr: " << posDescChr << endl;
 
 
+
+	vector<int> v_int = {9, 3, 5, 1, 7, 2, 8};
+	QuickSort(v_int, 0, v_int.size()-1);
+	
+	vector<float> v_float = {3.14, 2.71, 1.41, 5.0, 4.2};
+	QuickSort(v_float, 0, v_float.size()-1);
+
+ 	vector<char> v_char = {'z', 'a', 'f', 'b', 'm', 'c'};
+	QuickSort(v_char, 0, v_char.size()-1);
+	cout << "Vector ordenado: ";
+        for (const char& c : v_char) cout << c << " ";
+        cout << endl;
+
+	vector<string> v_str = {"perro", "gato", "elefante", "loro", "abeja"};
+	QuickSort(v_str,0, v_str.size()-1);
+	cout << "Vector ordenado: ";
+	for (const string& s : v_str) cout << s << " ";
+	cout << endl;
+
 	return 0;
 }
 		
